@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+</head>
+<body>
+    <!-- from youtube we can show video -->
+    <div>
+
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/mwHpvyRfwCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/s64atfxznfI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/xgetDHelzyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/7vAmGFcs-AU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/IygPoF9Y5O8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KObtkOCj1NU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AjCJtT_qkKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        
+    </div>
+
+    <!-- local videos -->
+    <div>
+       <span> <video src="./PHAO-2 PHUT HON (KAIZ REMIX)Full screen lyric whatsapp status.mp4"  width="300" id="video"></video></span><br>
+        <!-- <center><button type="button">Click Me!</button></center> -->
+        <!-- <button onclick="playVid()" type="button">Play Video</button>
+       <button onclick="pauseVid()" type="button">Pause Video</button> -->
+        <!-- <script> 
+            var vid = document.getElementById("myVideo"); 
+            
+            function playVid() { 
+              vid.play(); 
+            } 
+            
+            function pauseVid() { 
+              vid.pause(); 
+            } 
+         </script>  -->
+            
+                
+                <input type="button" value="On" id="onoff2" onclick="onoff();"> 
+            
+
+
+    </div>
+</body>
+<script>
+    function onoff(){
+        debugger
+      var currentvalue = document.getElementById('onoff2').value;
+      const video = document.getElementById('video')
+      debugger
+      if(currentvalue == "Off"){
+        document.getElementById("onoff2").value="On";
+        video.pause();
+      }else{
+        document.getElementById("onoff2").value="Off";
+        video.play();
+      }
+    }
+    </script>
+</html>
